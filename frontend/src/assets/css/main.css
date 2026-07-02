@@ -1,0 +1,126 @@
+/* ── 全局样式 ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ====== Theme Variables ====== */
+:root {
+  --bg-primary: #f0f2f5;
+  --bg-card: #ffffff;
+  --bg-page: #f0f2f5;
+  --bg-header: rgba(255, 255, 255, 0.85);
+  --bg-sidebar: #ffffff;
+  --text-primary: #1a3a5c;
+  --text-secondary: #8c8c8c;
+  --text-header: #2c3e50;
+  --border-color: #f0f0f0;
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-header: 0 1px 12px rgba(0, 0, 0, 0.06);
+  --chart-tag-bg: #f5f5f5;
+  --chart-tag-text: #8c8c8c;
+  --chart-axis-color: #e8e8e8;
+  --chart-split-color: #f0f0f0;
+  --sidebar-menu-bg: #ffffff;
+  --sidebar-menu-text: #333333;
+  --sidebar-menu-hover: rgba(183, 77, 255, 0.06);
+  --table-row-hover-bg: #f0f2f5;
+
+  /* Tech accent colors */
+  --accent-purple: #b74dff;
+  --accent-purple-light: #c87aff;
+  --accent-blue: #60a5fa;
+  --accent-gradient: linear-gradient(135deg, #60a5fa, #c084fc, #f472b6);
+  --glow-purple: rgba(183, 77, 255, 0.15);
+  --glow-blue: rgba(96, 165, 250, 0.15);
+  --header-border-gradient: linear-gradient(90deg, #60a5fa, #c084fc, #f472b6);
+}
+
+body.dark {
+  --bg-primary: #0d0d1a;
+  --bg-card: #151528;
+  --bg-page: #0d0d1a;
+  --bg-header: rgba(22, 22, 50, 0.88);
+  --bg-sidebar: rgba(22, 22, 50, 0.92);
+  --text-primary: #e0e6ed;
+  --text-secondary: #8892a4;
+  --text-header: #c8d0da;
+  --border-color: #2a2a4a;
+  --shadow-card: 0 2px 20px rgba(0, 0, 0, 0.4);
+  --shadow-header: 0 1px 12px rgba(0, 0, 0, 0.4);
+  --chart-tag-bg: #2a2a4a;
+  --chart-tag-text: #8892a4;
+  --chart-axis-color: #3a3a5a;
+  --chart-split-color: #2a2a4a;
+  --sidebar-menu-bg: transparent;
+  --sidebar-menu-text: #c8d0da;
+  --sidebar-menu-hover: rgba(183, 77, 255, 0.1);
+  --el-menu-hover-bg-color: rgba(183, 77, 255, 0.1);
+  --el-table-bg-color: #151528;
+  --el-table-header-bg-color: #151528;
+  --el-table-tr-bg-color: #151528;
+  --el-table-border-color: #2a2a4a;
+  --el-bg-color: #0d0d1a;
+  --el-bg-color-overlay: #151528;
+  --el-text-color-primary: #e0e6ed;
+  --el-text-color-regular: #c8d0da;
+  --el-border-color: #2a2a4a;
+  --el-border-color-light: #2a2a4a;
+  --el-fill-color-blank: #151528;
+  --el-fill-color-light: #1a1a3a;
+  --el-dialog-bg-color: #151528;
+  --el-input-bg-color: transparent;
+  --el-input-text-color: #e0e6ed;
+  --el-input-border-color: rgba(255,255,255,0.12);
+  --el-input-hover-border-color: #b74dff;
+  --el-input-placeholder-color: rgba(255,255,255,0.25);
+  --el-popper-bg-color: #151528;
+  --table-row-hover-bg: #1a1a3a;
+
+  /* Dark mode tech accent overrides */
+  --glow-purple: rgba(183, 77, 255, 0.2);
+  --glow-blue: rgba(96, 165, 250, 0.2);
+  --shadow-card: 0 2px 20px rgba(183, 77, 255, 0.05);
+}
+
+/* ====== Smooth transition for theme switch ====== */
+body,
+.dashboard-container,
+.stat-card,
+.chart-box,
+.header,
+.sidebar,
+.content-box,
+.el-table,
+.el-card {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ====== Glass morphism base ====== */
+.glass {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ====== Gradient accent border (bottom) ====== */
+.accent-border {
+  position: relative;
+}
+.accent-border::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #60a5fa, #c084fc, #f472b6);
+  opacity: 0.6;
+}
