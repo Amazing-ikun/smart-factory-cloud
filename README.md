@@ -167,9 +167,17 @@ smart-factory-cloud/
 
 ## 截图
 
-> 截图待补充
-> 
-> 系统首页 · 产品管理 · 设备管理 · 订单管理 · 生产计划 · 生产调度 · 日报工 · 用户管理 · 个人中心 · 消息中心 · 日志查询 · 滑块验证码
+  | 功能 | 预览 |
+  |------|------|
+  | 数据看板 | ![dashboard](screenshots/dashboard-light.png) |
+  | 产品管理 | ![product](screenshots/product-light.png) |
+  | 设备管理 | ![equipment](screenshots/equipment-light.png) |
+  | 订单管理 | ![order](screenshots/order-light.png) |
+  | 生产计划 | ![plan](screenshots/plan-light.png) |
+  | 生产调度 | ![schedule](screenshots/schedule-light.png) |
+  | 个人中心 | ![user](screenshots/user-dark.png) |
+  | 用户管理 | ![user](screenshots/userManage-light.png) |
+  | 滑块验证码 | ![captcha](screenshots/captcha.png) |
 
 ## Release Notes
 
