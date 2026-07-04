@@ -175,7 +175,7 @@ smart-factory-cloud/
 
 ### v1.0.0
 
-首个正式版本，完整实现工厂管理系统核心功能，详见 [Releases](https://github.com/your-username/smart-factory-cloud/releases)。
+首个正式版本，完整实现工厂管理系统核心功能，详见 [Releases](https://github.com/Amazing-ikun/smart-factory-cloud/releases)。
 
 ## License
 
